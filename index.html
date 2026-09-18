@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Louis Lim — Web Programmer</title>
+<meta name="description" content="Louis Lim Chee Keat — Web Programmer specializing in WordPress, Elementor, WooCommerce and responsive front-end development." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=5" />
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-main">Louis Lim</span>
+      <span class="logo-sub"><i></i>Portfolio<i></i></span>
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="#about">About Me</a>
+      <a href="#work">Showcase</a>
+      <a href="#contact" class="nav-cta">Contact Me <span>&rarr;</span></a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+    <a href="#about">About Me</a>
+    <a href="#work">Showcase</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-ambient"></div>
+      <div class="hero-photo-bleed"></div>
+      <div class="hero-wash"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-photo-mobile" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Web Programmer</p>
+        <h1 class="hero-title reveal">
+          Building websites that feel <span class="italic">crafted</span>,<br>
+          not just coded.
+        </h1>
+        <p class="hero-sub reveal">
+          I'm Louis Lim. Somewhere between a blank screen and a finished site, I find the
+          small details that make a brand feel like itself — one thoughtful pixel,
+          one clean line of code at a time.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#work" class="btn btn-primary">View Showcase</a>
+          <a href="assets/Louis-Lim-Resume.pdf" class="btn btn-ghost" download>Download Résumé</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <p class="eyebrow reveal">About Me</p>
+        <h2 class="section-title reveal">Turning client briefs into functional, good-looking websites.</h2>
+        <p class="reveal">
+          I'm a Web Programmer with hands-on experience developing, maintaining and customizing
+          responsive websites using <strong>WordPress, Elementor, HTML, CSS, JavaScript and PHP</strong>.
+          I build user-friendly sites, customize layouts and functionality, troubleshoot front-end
+          issues, and optimize every project across desktop, tablet and mobile.
+        </p>
+        <p class="reveal">
+          Beyond the build, I handle <strong>WooCommerce stores</strong> end-to-end — product pages,
+          categories, variations and cart flows — plus plugin integrations (forms, WhatsApp chat,
+          job listings, 360° virtual tours) and ongoing maintenance, content updates and basic
+          on-page SEO.
+        </p>
+        <div class="about-facts reveal">
+          <div class="fact">
+            <span class="fact-icon">📍</span>
+            <div>
+              <strong>Based in Puchong, Selangor</strong>
+              <span>Available for freelance &amp; full-time web projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / PORTFOLIO -->
+  <section class="section" id="work">
+    <div class="container">
+      <p class="eyebrow reveal center">Showcase</p>
+      <h2 class="section-title reveal center">Client Websites</h2>
+      <p class="section-sub reveal center">
+        Every project began the same way: a blank canvas, and a story worth building well.
+        Each tailored to the client's brand and goals.
+      </p>
+
+      <div class="filter-row reveal" role="tablist" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="realestate">Real Estate</button>
+        <button class="filter-btn" data-filter="hospitality">Hospitality &amp; Wellness</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+
+        <article class="work-card reveal" data-cat="corporate">
+          <a class="work-media" href="https://txgmalaysia.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/txgmalaysia.jpg" alt="Screenshot of TXG Malaysia website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Bilingual</span></div>
+            <h3>TXG Malaysia</h3>
+            <p>Cultural &amp; spiritual services site for a Taoist temple — bilingual content, service booking CTAs and a serene lotus-themed design.</p>
+            <a href="https://txgmalaysia.com/" target="_blank" rel="noopener" class="work-link">txgmalaysia.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="hospitality">
+          <a class="work-media" href="https://shanmuli.com.my/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/shanmuli.jpg" alt="Screenshot of Shanmuli Glamping website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Bilingual</span></div>
+            <h3>Shanmuli Glamping</h3>
+            <p>Nature-retreat &amp; glamping site with immersive full-bleed imagery, tent &amp; rate info and bilingual EN/中文 navigation.</p>
+            <a href="https://shanmuli.com.my/" target="_blank" rel="noopener" class="work-link">shanmuli.com.my ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="hospitality">
+          <a class="work-media" href="https://easezonetheraphy.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/easezonetheraphy.jpg" alt="Screenshot of Ease Zone Therapy website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">WhatsApp</span></div>
+            <h3>Ease Zone Therapy</h3>
+            <p>Calming mental-wellness site for a therapy centre, with service breakdowns, self-assessment tools and a booking flow.</p>
+            <a href="https://easezonetheraphy.com/" target="_blank" rel="noopener" class="work-link">easezonetheraphy.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="realestate">
+          <a class="work-media" href="https://kldivine.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/kldivine.jpg" alt="Screenshot of KL Divine luxury condominium website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Lead-gen</span></div>
+            <h3>KL Divine</h3>
+            <p>High-end property microsite for a KLCC luxury residence — cinematic imagery, gallery, floor plans and a private-viewing lead form.</p>
+            <a href="https://kldivine.com/" target="_blank" rel="noopener" class="work-link">kldivine.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="realestate">
+          <a class="work-media" href="https://ctcskyonebukitchagar-jbproperty.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/ctcskyone.jpg" alt="Screenshot of CTC SkyOne Bukit Chagar property website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Lead-gen</span></div>
+            <h3>CTC SkyOne @ Bukit Chagar</h3>
+            <p>Property-launch landing page for a Johor Bahru freehold residence near the RTS Link — built to drive brochure downloads &amp; enquiries.</p>
+            <a href="https://ctcskyonebukitchagar-jbproperty.com/" target="_blank" rel="noopener" class="work-link">ctcskyonebukitchagar-jbproperty.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="ecommerce">
+          <a class="work-media" href="https://thedotroastery.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/thedotroastery.jpg" alt="Screenshot of The Dot Roastery online coffee store homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">WooCommerce</span><span class="tag tag-sm">E-Commerce</span></div>
+            <h3>The Dot Roastery</h3>
+            <p>Full WooCommerce store for a coffee roastery — product catalogue, search &amp; cart, and a warm bean-to-cup brand experience.</p>
+            <a href="https://thedotroastery.com/" target="_blank" rel="noopener" class="work-link">thedotroastery.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="ecommerce">
+          <a class="work-media" href="https://arora99shop.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/arora99shop.jpg" alt="Screenshot of Arora99 Shop batik e-commerce website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">WooCommerce</span><span class="tag tag-sm">Bilingual</span></div>
+            <h3>Arora99 Shop</h3>
+            <p>E-commerce storefront for Batik DIY experience kits, with bilingual product pages and event/workshop offerings.</p>
+            <a href="https://arora99shop.com/" target="_blank" rel="noopener" class="work-link">arora99shop.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="ecommerce">
+          <a class="work-media" href="https://kampungbii.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/kampungbii.jpg" alt="Screenshot of Kampung Bii frozen food e-commerce website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">WooCommerce</span><span class="tag tag-sm">Promotions</span></div>
+            <h3>Kampung Bii 古香</h3>
+            <p>WooCommerce store for frozen soups &amp; ready meals, with tiered bundle promotions and nationwide delivery information.</p>
+            <a href="https://kampungbii.com/" target="_blank" rel="noopener" class="work-link">kampungbii.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="realestate">
+          <a class="work-media" href="https://ss15condo.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/ss15condo.jpg" alt="Screenshot of SS15 Condo property website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Lead-gen</span></div>
+            <h3>SS15 Condo</h3>
+            <p>Condominium microsite for a Subang Jaya residence, with cinematic tower imagery, lifestyle highlights and a residence-registration lead flow.</p>
+            <a href="https://ss15condo.com/" target="_blank" rel="noopener" class="work-link">ss15condo.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="realestate">
+          <a class="work-media" href="https://begoniabalikpulau.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/begoniabalikpulau.jpg" alt="Screenshot of Begonia at Botanica.CT property website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Lead-gen</span></div>
+            <h3>Begonia @ Botanica.CT</h3>
+            <p>Landing page for a gated semi-detached garden-home launch in Balik Pulau, featuring a 360° virtual tour and key feature highlights.</p>
+            <a href="https://begoniabalikpulau.com/" target="_blank" rel="noopener" class="work-link">begoniabalikpulau.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="ecommerce">
+          <a class="work-media" href="https://gatzmall.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/gatzmall.jpg" alt="Screenshot of Gatzmall online store homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">WooCommerce</span><span class="tag tag-sm">E-Commerce</span></div>
+            <h3>Gatzmall</h3>
+            <p>WooCommerce storefront for a nuts, dried-fruit and pantry-essentials brand, with a warm rustic hero and full shop, cart and account flow.</p>
+            <a href="https://gatzmall.com/" target="_blank" rel="noopener" class="work-link">gatzmall.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="realestate">
+          <a class="work-media" href="https://iconic-jbproperty.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/iconicjbproperty.jpg" alt="Screenshot of The Iconic by PGB property website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Lead-gen</span></div>
+            <h3>The Iconic by PGB</h3>
+            <p>Property-launch site for a 47-storey freehold serviced residence in Johor Bahru, with tenure and pricing highlights plus a location deep-dive.</p>
+            <a href="https://iconic-jbproperty.com/" target="_blank" rel="noopener" class="work-link">iconic-jbproperty.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="corporate">
+          <a class="work-media" href="https://cuckooselangormalaysia.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/cuckooselangor.jpg" alt="Screenshot of Cuckoo Malaysia website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Bilingual</span></div>
+            <h3>Cuckoo Malaysia</h3>
+            <p>Bilingual agent site for Cuckoo's water purifiers, air purifiers and home wellness appliances, built around trust badges and WhatsApp consultation.</p>
+            <a href="https://cuckooselangormalaysia.com/" target="_blank" rel="noopener" class="work-link">cuckooselangormalaysia.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="corporate">
+          <a class="work-media" href="https://ffglobaltrading.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/ffglobaltrading.jpg" alt="Screenshot of FF Global Trading website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Corporate</span></div>
+            <h3>FF Global Trading</h3>
+            <p>Corporate site for a Thai tropical-fruit importer and wholesaler, positioning fresh supply and wholesale pricing for retailers, hotels and supermarkets.</p>
+            <a href="https://ffglobaltrading.com/" target="_blank" rel="noopener" class="work-link">ffglobaltrading.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="hospitality">
+          <a class="work-media" href="https://trendshairsaloon.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/trendshairsaloon.jpg" alt="Screenshot of Trends Hair Salon website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Bilingual</span></div>
+            <h3>Trends Hair Salon</h3>
+            <p>Bilingual landing page for a Johor hair-extension studio, pairing an editorial hero shot with clear package pricing and a booking CTA.</p>
+            <a href="https://trendshairsaloon.com/" target="_blank" rel="noopener" class="work-link">trendshairsaloon.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="corporate">
+          <a class="work-media" href="https://ansonhomelift.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/ansonhomelift.jpg" alt="Screenshot of Anson Home Lift website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Corporate</span></div>
+            <h3>Anson Home Lift</h3>
+            <p>Site for a residential home-lift specialist, showcasing custom installations with a quote-request and brochure-download flow.</p>
+            <a href="https://ansonhomelift.com/" target="_blank" rel="noopener" class="work-link">ansonhomelift.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="ecommerce">
+          <a class="work-media" href="https://yuziyuantea.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/yuziyuantea.jpg" alt="Screenshot of Yuzi Yuan Tea website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Bilingual</span><span class="tag tag-sm">E-Commerce</span></div>
+            <h3>Yuzi Yuan Tea 玉梓园</h3>
+            <p>Direct-to-consumer site for a Guangxi liu bao tea brand, built to sell wholesale and retail tea online without the overhead of a physical shop.</p>
+            <a href="https://yuziyuantea.com/" target="_blank" rel="noopener" class="work-link">yuziyuantea.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="realestate">
+          <a class="work-media" href="https://kslnexusjb.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/kslnexusjb.jpg" alt="Screenshot of KSL Nexus JB property website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Lead-gen</span></div>
+            <h3>KSL Nexus JB</h3>
+            <p>Microsite for a 47-storey freehold mixed development in Johor Bahru, combining serviced apartments, retail and lifestyle facilities in one address.</p>
+            <a href="https://kslnexusjb.com/" target="_blank" rel="noopener" class="work-link">kslnexusjb.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="corporate">
+          <a class="work-media" href="https://mingciai.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/mingciai.jpg" alt="Screenshot of Ming Ci AI website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Bilingual</span></div>
+            <h3>Ming Ci AI</h3>
+            <p>Franchise site for an AI-powered nail and coffee kiosk business, pitching a low-manpower, tech-driven business opportunity to investors.</p>
+            <a href="https://mingciai.com/" target="_blank" rel="noopener" class="work-link">mingciai.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="hospitality">
+          <a class="work-media" href="https://innertemplehealingstudio.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/innertemplehealing.jpg" alt="Screenshot of Inner Temple Healing Studio website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Booking</span></div>
+            <h3>Inner Temple Healing Studio</h3>
+            <p>Serene booking site for a private Reiki and sound-healing practice, built around a signature session and a gentle, restorative visual language.</p>
+            <a href="https://innertemplehealingstudio.com/" target="_blank" rel="noopener" class="work-link">innertemplehealingstudio.com ↗</a>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-cat="corporate">
+          <a class="work-media" href="https://azanlee.com/" target="_blank" rel="noopener">
+            <img src="assets/img/projects/azanlee.jpg" alt="Screenshot of Azan Lee website homepage" loading="lazy">
+            <span class="work-visit">Visit site ↗</span>
+          </a>
+          <div class="work-body">
+            <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Bilingual</span></div>
+            <h3>Azan Lee 阿赞里</h3>
+            <p>Chinese-language site for a Thai spiritual master offering blessings and fortune consultations, built around trust-building storytelling.</p>
+            <a href="https://azanlee.com/" target="_blank" rel="noopener" class="work-link">azanlee.com ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-copy reveal">
+        <p class="eyebrow center">Get in touch</p>
+        <h2 class="section-title center">Contact</h2>
+        <div class="contact-list">
+          <a href="mailto:cheekeat0827@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>cheekeat0827@gmail.com</span>
+          </a>
+          <a href="tel:+60149831388" class="contact-item">
+            <span class="contact-icon">☎</span>
+            <span>014-983 1388</span>
+          </a>
+          <a href="https://www.linkedin.com/in/louis-lim-749448320" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">in</span>
+            <span>linkedin.com/in/louis-lim-749448320</span>
+          </a>
+          <div class="contact-item contact-item--static">
+            <span class="contact-icon">📍</span>
+            <span>Puchong, Selangor, Malaysia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Louis Lim Chee Keat. Built with care.</p>
+    <a href="#top" class="back-to-top">Back to top <span>&uarr;</span></a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

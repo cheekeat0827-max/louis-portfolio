@@ -266,6 +266,39 @@ p{ margin: 0 0 1em; color: var(--text-muted); }
   display:inline-block; padding: 6px 13px; border-radius: 999px; font-size: 0.78rem;
   background: var(--accent-soft); color: var(--accent); border: 1px solid rgba(184,129,58,0.25);
 }
+
+.work-actions{
+  display:flex; justify-content:center; margin-top: 52px;
+}
+.view-more-btn{ min-width: 168px; justify-content:center; }
+.view-more-btn span{ transition: transform .25s var(--ease); }
+.view-more-btn:hover span{ transform: translateX(5px); }
+
+/* ---------- All client websites page ---------- */
+.projects-page{ min-height:100vh; }
+.projects-page-section{ padding-top: 150px; }
+.projects-page .site-header{ background: rgba(247,243,236,0.92); }
+.projects-back-link{
+  display:inline-flex; align-items:center; gap:8px; color:var(--text-muted);
+  font-size:.9rem; font-weight:600; transition:color .25s var(--ease), transform .25s var(--ease);
+}
+.projects-back-link:hover{ color:var(--accent); transform:translateX(-4px); }
+.projects-count{ margin-top:-24px; margin-bottom:36px; color:var(--text-faint); font-size:.86rem; text-align:center; }
+.projects-loading{ grid-column:1/-1; padding:64px 20px; text-align:center; color:var(--text-muted); }
+.work-media.has-fallback{
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg, #211f1b, #b8813a);
+}
+.work-media.has-fallback::before{
+  content:attr(data-title); color:#fff; font-family:var(--font-display);
+  font-size:1.45rem; letter-spacing:.02em; padding:24px; text-align:center;
+}
+
+@media (max-width: 640px){
+  .projects-page-section{ padding-top: 118px; }
+  .projects-back-link{ font-size:.82rem; }
+  .work-actions{ margin-top:36px; }
+}
 .tag-sm{ padding: 4px 10px; font-size: 0.7rem; }
 
 /* ---------- Contact ---------- */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Client websites designed and developed by Louis Lim.">
+  <title>Client Websites — Louis Lim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=6">
+</head>
+<body class="projects-page">
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Louis Lim</span>
+      <span class="logo-sub"><i></i>Portfolio<i></i></span>
+    </a>
+    <a href="index.html#work" class="projects-back-link"><span>&larr;</span> Back to Home</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="section projects-page-section">
+    <div class="container">
+      <p class="eyebrow center">Showcase</p>
+      <h1 class="section-title center">All Client Websites</h1>
+      <p class="section-sub center">
+        A complete collection of client websites built across e-commerce, property,
+        hospitality, wellness and corporate industries.
+      </p>
+
+      <div class="filter-row" role="tablist" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="realestate">Real Estate</button>
+        <button class="filter-btn" data-filter="hospitality">Hospitality &amp; Wellness</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+      </div>
+
+      <p class="projects-count" id="projectsCount" aria-live="polite">Loading client websites…</p>
+      <div class="work-grid" id="allWorkGrid">
+        <p class="projects-loading">Loading projects…</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<template id="newProjectsTemplate">
+  <article class="work-card" data-cat="corporate">
+    <a class="work-media" data-title="Innobolt Technology" href="https://kind-sapphire-iguana.157-20-105-252.cpanel.site/" target="_blank" rel="noopener">
+      <img src="https://kind-sapphire-iguana.157-20-105-252.cpanel.site/wp-content/uploads/2026/09/ba016c59-8e91-4122-9bb0-62df1028a655-1536x864.png" alt="Innobolt Technology PVD coating solutions" loading="lazy">
+      <span class="work-visit">Visit site ↗</span>
+    </a>
+    <div class="work-body">
+      <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Corporate</span></div>
+      <h3>Innobolt Technology</h3>
+      <p>Industrial website presenting PVD coating technology and engineered fastening solutions for demanding manufacturing applications.</p>
+      <a href="https://kind-sapphire-iguana.157-20-105-252.cpanel.site/" target="_blank" rel="noopener" class="work-link">View website ↗</a>
+    </div>
+  </article>
+
+  <article class="work-card" data-cat="corporate">
+    <a class="work-media" data-title="PennyMatters" href="https://whimsical-lavender-pony.157-20-105-252.cpanel.site/" target="_blank" rel="noopener">
+      <img src="https://whimsical-lavender-pony.157-20-105-252.cpanel.site/wp-content/uploads/2026/09/serious-indonesian-mentor-worker-talk-female-colleague-teach-intern_146105-29183.jpg" alt="PennyMatters business consulting team" loading="lazy">
+      <span class="work-visit">Visit site ↗</span>
+    </a>
+    <div class="work-body">
+      <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">B2B</span></div>
+      <h3>PennyMatters</h3>
+      <p>B2B growth and business consulting website covering outsourced sales, workforce development, recruitment and corporate partnerships.</p>
+      <a href="https://whimsical-lavender-pony.157-20-105-252.cpanel.site/" target="_blank" rel="noopener" class="work-link">View website ↗</a>
+    </div>
+  </article>
+
+  <article class="work-card" data-cat="corporate">
+    <a class="work-media" data-title="Armonic Horizon" href="https://armonichorizon.com/" target="_blank" rel="noopener">
+      <img src="https://armonichorizon.com/wp-content/uploads/2026/09/Untitled-design-1-1.png" alt="Armonic Horizon industrial engineering project" loading="lazy">
+      <span class="work-visit">Visit site ↗</span>
+    </a>
+    <div class="work-body">
+      <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">Elementor</span><span class="tag tag-sm">Engineering</span></div>
+      <h3>Armonic Horizon</h3>
+      <p>Corporate website for a Malaysian electrical, instrumentation and automation engineering company serving industrial projects.</p>
+      <a href="https://armonichorizon.com/" target="_blank" rel="noopener" class="work-link">armonichorizon.com ↗</a>
+    </div>
+  </article>
+
+  <article class="work-card" data-cat="ecommerce">
+    <a class="work-media" data-title="ORVÉA Malaysia" href="https://orvea.my/" target="_blank" rel="noopener">
+      <img src="https://orvea.my/wp-content/uploads/2026/09/9d6a8974-964c-44ef-8f2f-9607362d6064-765x1024.jpg" alt="ORVÉA Hokkaido Kelp hair care product" loading="lazy">
+      <span class="work-visit">Visit site ↗</span>
+    </a>
+    <div class="work-body">
+      <div class="work-tags"><span class="tag tag-sm">WordPress</span><span class="tag tag-sm">WooCommerce</span><span class="tag tag-sm">E-Commerce</span></div>
+      <h3>ORVÉA Malaysia</h3>
+      <p>Premium hair and scalp care store featuring Hokkaido kelp products, brand storytelling, rewards and a complete online shopping flow.</p>
+      <a href="https://orvea.my/" target="_blank" rel="noopener" class="work-link">orvea.my ↗</a>
+    </div>
+  </article>
+</template>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Louis Lim Chee Keat. Built with care.</p>
+    <a href="#top" class="back-to-top">Back to top <span>&uarr;</span></a>
+  </div>
+</footer>
+
+<script src="assets/js/projects.js"></script>
+</body>
+</html>

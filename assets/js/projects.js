@@ -5,6 +5,24 @@
   var template = document.getElementById('newProjectsTemplate');
   var count = document.getElementById('projectsCount');
   var filterBtns = document.querySelectorAll('.filter-btn');
+  var navToggle = document.getElementById('navToggle');
+  var navMobile = document.getElementById('navMobile');
+
+  if (navToggle && navMobile) {
+    navToggle.addEventListener('click', function () {
+      var open = navToggle.classList.toggle('open');
+      navMobile.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    navMobile.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navToggle.classList.remove('open');
+        navMobile.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 
   function addNewProjects(fragment) {
     fragment.appendChild(template.content.cloneNode(true));

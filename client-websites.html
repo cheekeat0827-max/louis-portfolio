@@ -14,14 +14,26 @@
 
 <div class="noise-overlay" aria-hidden="true"></div>
 
-<header class="site-header">
+<header class="site-header" id="siteHeader">
   <div class="container header-inner">
-    <a href="index.html" class="logo">
+    <a href="index.html#top" class="logo">
       <span class="logo-main">Louis Lim</span>
       <span class="logo-sub"><i></i>Portfolio<i></i></span>
     </a>
-    <a href="index.html#work" class="projects-back-link"><span>&larr;</span> Back to Home</a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="index.html#about">About Me</a>
+      <a href="index.html#work">Showcase</a>
+      <a href="index.html#contact" class="nav-cta">Contact Me <span>&rarr;</span></a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+    <a href="index.html#about">About Me</a>
+    <a href="index.html#work">Showcase</a>
+    <a href="index.html#contact">Contact Me</a>
+  </nav>
 </header>
 
 <main id="top">

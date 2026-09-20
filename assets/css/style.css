@@ -176,7 +176,8 @@ p{ margin: 0 0 1em; color: var(--text-muted); }
 }
 
 .hero-inner{
-  position:relative; z-index:1; width:100%;
+  position:relative; z-index:1; width:100%; max-width:1480px;
+  padding-left:clamp(28px, 4vw, 56px); padding-right:clamp(28px, 4vw, 56px);
 }
 .hero-copy{ max-width: 760px; }
 .hero-photo-mobile{ display:none; }
